@@ -1,6 +1,7 @@
-clone or download before you learn.
-download file from https://drive.google.com/drive/folders/1stUNkSoONMssX-H2CQmmi8g6diE2HxPz?usp=sharing
-
-NFL Play by Play 2009-2016 (v3).csv for \missing_values
-
-Building_Permits.csv for \workshop
+group assignment: please reseach "Vector database" contain following this subject
+1. what is "Vector database"
+2. the difference between "Vector database" and "Relational database"
+3. Pros & cons of "Vector database"
+4. Use case
+before we start new session on this Saturday all of you will summarize & present a conclusion to me.
+**Note it's not individual assigment I suggest you working as a team to complete all subject.
