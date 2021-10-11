@@ -5,4 +5,4 @@ group assignment: please reseach "Vector database" contain following this subjec
 4. Use case
 before we start new session on this Saturday all of you will summarize & present a conclusion to me.
 
-**Note it's not individual assigment I suggest you working as a team to complete all subject.
+**Note it's not individual assignment I suggest you working as a team to complete all subject.
