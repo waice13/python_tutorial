@@ -3,6 +3,10 @@ from typing import Optional
 from fastapi import FastAPI
 from starlette.routing import Host
 
+import psycopg2
+from sqlalchemy import create_engine
+import pandas as pd
+
 import uvicorn
 
 
@@ -13,25 +17,12 @@ app = FastAPI()
 
 def read_root():
 
-    car = {
-        1:{
-            "brand": "Ford",
-            "model": "Mustang",
-            "year": 1964
-        },
-        2:{
-            "brand": "Honda",
-            "model": "Civic",
-            "year": 2014
-        },
-        3:{
-            "brand": "Mazda",
-            "model": "3",
-            "year": 2020
-        },
-    }
-    
-    return car
+    engine = create_engine('postgresql+psycopg2://root:root@postgresql_db/ws_db')
+    con = engine.connect()
+
+    df = pd.read_sql('SELECT kind, etag, id, title FROM public.uscategory;', con)  
+
+    return df.to_dict(orient='records')
 
 
 if __name__=="__main__":
